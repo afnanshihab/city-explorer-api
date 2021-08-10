@@ -50,10 +50,9 @@ server.get('/weather/:city_name',(req,res)=>{
     res.send(newWeather);
     
   }else{
-    res.send('the location  NOT  found');
+    res.status.send('the location  NOT  found');
   }
 })
-
 
 
 class Forecast {
